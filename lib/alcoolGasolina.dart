@@ -18,7 +18,6 @@ class _HomeAlcoolState extends State<HomeAlcool> {
     //fazer a conversão, ele exibe uma msg de erro, e o tryparse exibe um valor nulo
     var precoAlcool = double.tryParse(_controllerAlcool.text);
     var precoGasolina = double.tryParse(_controllerGasolina.text);
-
     if( precoAlcool == null || precoGasolina ==null){
       setState(() {
         _textoResultado = "Número inválido, digite números maiores que 0 e utilizando ' . '";
